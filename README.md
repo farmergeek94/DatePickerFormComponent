@@ -6,7 +6,7 @@ Adds a Date Picker for usein your forms or widget/section/pagetemplate propertie
 ```
 [EditingComponent(DatePickerComponent.IDENTIFIER, Label = "Date")]
 /// <summary>
-/// HTML formatted text.
+/// Date field input.
 /// </summary>
 public string Date { get; set; }
 ```
