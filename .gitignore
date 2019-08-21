@@ -285,3 +285,6 @@ export*.zip
 # Removing nuget build file
 
 #Include Packages folder since Rx-Core is no longer retreivable through nuget
+/DatePickerFormComponent.Views/App_Data/Global/Resources
+/DatePickerFormComponent.Views/CMSResources
+/DatePickerFormComponent/App_Data/Global/Resources

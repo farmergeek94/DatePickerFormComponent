@@ -6,11 +6,15 @@
 		<title>$title$</title>
 		<authors>$author$</authors>
 		<owners>$author$</owners>
-		<projectUrl>https://github.com/farmergeek94/DatePickerFormComponent.git</projectUrl>
+		<projectUrl>https://github.com/farmergeek94/DatePickerComponent.git</projectUrl>
 		<iconUrl>https://raw.githubusercontent.com/Kentico/devnet.kentico.com/master/marketplace/assets/generic-integration.png</iconUrl>
+		<license type="expression">MIT</license>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>$description$</description>
-		<releaseNotes/>
+		<releaseNotes>
+		12.29.0
+		Initial Release
+		</releaseNotes>
 		<copyright>Copyright ? 2019</copyright>
 		<tags>DatePicker Kentico MVC HBS Heartland Business Systems Date Picker DateTimePicker Time</tags>
 		<dependencies>
@@ -19,10 +23,14 @@
 	</metadata>
 	<files>
 		<!-- Include the compiled views dll -->
-		<file src="bin\HBS.DatePickerFormComponent.Kentico.MVC.Views.dll" target = "lib\net461" />
-
-		<!-- Sample of how to include this file in the Content of the Nuget, this would cause the SampleIncludeFile.txt to be copied to the SampleResource folder in the project you import the NuGet package in
-	<file src="SampleResource\SampleIncludedFile.txt" target = "Content\SampleResource" />
-	-->
+		<file src="bin\HBS.DatePickerFormComponent.Kentico.MVC.Views.dll" target = "lib\net461" />	
+		<!-- Include the custom javascript -->
+		<file src="Content\FormComponents\DatePickerComponent\DatePickerComponent.js" target = "Content\FormComponents\DatePickerComponent\DatePickerComponent.js" />
+		<!-- Include the custom css -->
+		<file src="Content\FormComponents\DatePickerComponent\DatePicker.css" target = "Content\FormComponents\DatePickerComponent\DatePicker.css" />
+		<!-- Include the datetimepicker javascript -->
+		<file src="Content\FormComponents\DatePickerComponent\datetimepicker\jquery.datetimepicker.js" target = "Content\FormComponents\DatePickerComponent\datetimepicker\jquery.datetimepicker.js" />
+		<!-- Include the datetimepicker classic css -->
+		<file src="Content\FormComponents\DatePickerComponent\datetimepicker\jquery.datetimepicker.min.css" target = "Content\FormComponents\DatePickerComponent\datetimepicker\jquery.datetimepicker.min.css" />
 	</files>
 </package>

@@ -10,3 +10,14 @@
 }
 
 @Html.TextBoxFor(x => x.SelectedDateTime, htmlAttributes: htmlAttributes)
+<script type="text/javascript">
+    if (document.readyState === "loading") {
+        // Calls the function during the 'DOMContentLoaded' event, after the HTML document has been completely loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            createDatePickerFormComponent("@Html.NameFor(x=>x.SelectedDateTime)");
+        });
+    } else {
+        // Calls the function directly in cases where the component is rendered dynamically after 'DOMContentLoaded' has occurred
+        createDatePickerFormComponent("@Html.NameFor(x=>x.SelectedDateTime)");
+    }
+</script>
