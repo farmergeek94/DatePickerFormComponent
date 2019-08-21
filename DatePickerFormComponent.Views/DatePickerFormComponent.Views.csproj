@@ -1,4 +1,4 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\ILRepack.2.0.17\build\ILRepack.props" Condition="Exists('..\packages\ILRepack.2.0.17\build\ILRepack.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CompanyName.ShareableComponentBoilerplate.Kentico.MVC.Views</RootNamespace>
-    <AssemblyName>CompanyName.ShareableComponentBoilerplate.Kentico.MVC.Views</AssemblyName>
+    <RootNamespace>HBS.DatePickerFormComponent.Kentico.MVC.Views</RootNamespace>
+    <AssemblyName>HBS.DatePickerFormComponent.Kentico.MVC.Views</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -557,7 +557,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Views\Shared\Widgets\_ShareableComponentBoilerplate.cshtml" />
+    <Content Include="Views\Shared\Widgets\_DatePickerFormComponent.cshtml" />
     <Content Include="Views\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -573,9 +573,9 @@
     <Folder Include="obj\Debug\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShareableComponentBoilerplate\ShareableComponentBoilerplate.csproj">
+    <ProjectReference Include="..\DatePickerFormComponent\DatePickerFormComponent.csproj">
       <Project>{60d45549-bb62-4999-8f29-987b58b33127}</Project>
-      <Name>ShareableComponentBoilerplate</Name>
+      <Name>DatePickerFormComponent</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
