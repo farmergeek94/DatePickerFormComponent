@@ -1,0 +1,12 @@
+﻿
+@using Kentico.Forms.Web.Mvc
+
+@model HBS.DatePickerFormComponent.Kentico.MVC.DatePickerComponent
+
+
+@{
+    var htmlAttributes = ViewData.GetEditorHtmlAttributes();
+    htmlAttributes["class"] += " datepicker";
+}
+
+@Html.TextBoxFor(x => x.SelectedDateTime, htmlAttributes: htmlAttributes)
