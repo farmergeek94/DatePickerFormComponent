@@ -1,5 +1,6 @@
 # DatePickerFormComponent
-Adds a Date Picker for usein your forms or widget/section/pagetemplate properties.
+Adds a Date Picker for use in your forms or widget/section/pagetemplate properties.
+Javascript component from https://github.com/xdan/datetimepicker
 
 # Instructions
 ## Example use in widget property
